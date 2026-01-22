@@ -1,0 +1,49 @@
+[0m21:16:25.850678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cf9072ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cf9886a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cf9072f30>]}
+
+
+============================== 21:16:25.853455 | 7f76383e-0be1-4f5e-a18b-e5a20f80fd25 ==============================
+[0m21:16:25.853455 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:16:25.853950 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'fail_fast': 'False', 'profiles_dir': '/home/anteki/.dbt', 'cache_selected_only': 'False', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'debug': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt init twitch_project', 'empty': 'None', 'log_path': 'logs', 'no_print': 'None', 'write_json': 'True', 'quiet': 'False', 'warn_error': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:16:25.861994 [debug] [MainThread]: Starter project path: /home/anteki/.local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:16:25.864753 [info ] [MainThread]: 
+Your new dbt project "twitch_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:16:25.865283 [info ] [MainThread]: Setting up your profile.
+[0m21:16:34.028722 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:16:34.029137 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:16:34.029518 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:17:23.591494 [info ] [MainThread]: Profile twitch_project written to /home/anteki/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:17:23.592842 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 57.800358, "process_in_blocks": "688", "process_kernel_time": 0.141324, "process_mem_max_rss": "127152", "process_out_blocks": "176", "process_user_time": 1.605098}
+[0m21:17:23.593783 [debug] [MainThread]: Command `dbt init` succeeded at 21:17:23.593619 after 57.80 seconds
+[0m21:17:23.594328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cf9584b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cf8aeabd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cf713b8f0>]}
+[0m21:17:23.594901 [debug] [MainThread]: Flushing usage events
+[0m21:17:23.922255 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:53:58.137589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe587824d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5856f35c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58576e9f0>]}
+
+
+============================== 21:53:58.140573 | bc3f3ec7-64b7-4928-99f6-4160d83d023d ==============================
+[0m21:53:58.140573 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:53:58.141083 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/anteki/.dbt', 'partial_parse': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'empty': 'False', 'log_path': 'logs', 'warn_error': 'None', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'no_print': 'None', 'target_path': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'debug': 'False', 'static_parser': 'True'}
+[0m21:53:58.141777 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/anteki/Development/Twitch-stat/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:53:58.142648 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.06326631, "process_in_blocks": "0", "process_kernel_time": 0.11019, "process_mem_max_rss": "103328", "process_out_blocks": "16", "process_user_time": 1.353915}
+[0m21:53:58.143148 [debug] [MainThread]: Command `dbt run` failed at 21:53:58.143055 after 0.06 seconds
+[0m21:53:58.143549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5853db080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe584d13ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe58576e9f0>]}
+[0m21:53:58.143877 [debug] [MainThread]: Flushing usage events
+[0m21:53:58.447529 [debug] [MainThread]: An error was encountered while trying to flush usage events

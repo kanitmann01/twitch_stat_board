@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: twitch  # We will refer to this name later
+    database: TWITCH_ANALYTICS
+    schema: RAW_DATA
+    tables:
+      - name: STREAM_LOGS  # The table your Python script is loading into
